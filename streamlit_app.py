@@ -9,7 +9,7 @@ st.write(
   """
 )
 
-ctx = snowflake.connector.connect(
+ctx = st.connection("snowflake",
     user='kris3112',
     password='__Spring_2032__',
     account='CVZEQCB-YQB35976')
