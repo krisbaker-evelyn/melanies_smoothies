@@ -9,7 +9,10 @@ st.write(
   """
 )
 
-cnx=st.connection("snowflake")
+ctx = snowflake.connector.connect(
+    user='kris3112',
+    password='__Spring_2032__',
+    account='CVZEQCB-YQB35976')
 session=cnx.session()
 
 #session = get_active_session()
