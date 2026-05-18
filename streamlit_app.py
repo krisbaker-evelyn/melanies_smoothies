@@ -9,10 +9,7 @@ st.write(
   """
 )
 
-ctx = st.connection("snowflake",
-    user='kris3112',
-    password='__Spring_2032__',
-    account='CVZEQCB-YQB35976')
+ctx = st.connection("snowflake")
 session=cnx.session()
 
 #session = get_active_session()
